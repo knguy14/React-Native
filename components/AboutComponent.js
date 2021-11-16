@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { ScrollView, FlatList, Text } from 'react-native';
-import { Card } from 'react-native-elements';
-import { ListItem } from 'react-native-elements';
+import { Card, ListItem } from 'react-native-elements';
 import { PARTNERS } from '../shared/partners';
 
 class About extends Component {
@@ -32,7 +31,7 @@ class About extends Component {
             <ScrollView>
                 <Mission />
                 <Card
-                    title={'Community Partners'}>
+                    title='Community Partners'>
                         <FlatList
                             data={this.state.partners}
                             renderItem={renderPartner}
